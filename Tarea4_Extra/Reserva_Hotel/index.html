@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Reservas Hotel</title>
+</head>
+<body>
+    <h1>Reservas Hotel</h1>
+        <div id="habitaciones"><label>Tipo de habitación</label><br>
+            <select name="habitacion" id="habitacion">
+                <option>Standard</option>
+                <option>Junior Suite</option>
+                <option>Suite</option>
+            </select><br>
+        </div>
+        <div id="spa">
+            <label>Spa</label><br>
+            <label><input type="checkbox" id="conSpa">Spa</label>
+            <label><input type="checkbox" id="sinSpa">Sin Spa</label>
+        </div>
+        <div id="tipoHabitacion">
+            <label>Tipo de ocupación</label>
+            <select name="habitacionTipo" id="habitacionTipo">
+                <option>Individual</option>
+                <option selected>Doble</option>
+                <option>Triple</option>
+            </select>
+        </div>
+        <div id="numNoches">
+            <label>Número de noches</label>
+            <input type="number" id="numeroNoches">
+        </div>
+        <div id="parking">
+            <label>Número de noches de Parking</label>
+            <input type="number" id="nochesParking">
+        </div>
+        <div id="enviar">
+            <input type="submit" id="submit">
+        </div>
+
+    <div id="resultado"></div>
+    <script src="./hotel.js"></script>
+</body>
+</html>

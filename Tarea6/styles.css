@@ -1,0 +1,88 @@
+
+input {
+    width: 50px;
+    margin-left: 20px;
+}
+
+button {
+    background-color: blueviolet;
+    padding: 5px 5px 5px 5px;
+    width: 200px;
+}
+
+#subTotal {
+    margin-top: 35px;
+}
+
+#iva {
+    margin-top: 35px;
+}
+
+#total {
+    margin-top: 35px;
+}
+
+.error {
+    background-color: red;
+}
+
+
+/*
+function mostrarProductos() {
+    var capa = document.getElementById('productos');
+    var botonCalcular = document.getElementById('calcular');
+
+    for(var i = 0; i < products.length; i++) {
+        capa.innerHTML += (i + 1) + '. ' + products[i].description + ' - ' + products[i].price + '€/ud.'
+        var input = document.createElement("input");
+        var espacio = document.createElement("br");
+        input.setAttribute("id", i);
+        input.setAttribute("type", "number");
+        input.setAttribute("value", 0);
+        capa.appendChild(input)
+        capa.appendChild(espacio)
+    }
+}
+
+
+function calcular() {
+  var inputs = document.getElementsByTagName('input')
+  var subtotal = document.getElementById('subTotal')
+  var Iva = document.getElementById('iva')
+  var Total = document.getElementById('total')
+  var botonCalcular = document.getElementById('calcular');
+  var resultado = 0;
+  var iva = 0;
+  var total = 0;
+
+  for(var i = 0; i < inputs.length; i++) {
+        
+      botonCalcular.disabled = true;
+      resultado += parseInt(inputs[i].value) * products[i].price
+      subtotal.innerHTML = 'Subtotal ' + resultado + ' €';
+
+      iva += (parseInt(inputs[i].value) * products[i].price) * products[i].tax /100
+      Iva.innerHTML = 'IVA ' + iva.toFixed(2) + ' €'
+      total = resultado + iva;
+      Total.innerHTML = 'TOTAL ' + total.toFixed(2) + ' €';
+    }
+  
+}
+
+
+
+mostrarProductos();
+var botonCalcular = document.getElementById('calcular');
+
+botonCalcular.addEventListener('click', function() {
+  var inputs = document.getElementsByTagName('input')
+
+  if(inputs[i].value == 0) {
+    botonCalcular.disabled = true;
+  }else { 
+    botonCalcular.disabled = true;
+  calcular()
+  }
+})
+
+*/
